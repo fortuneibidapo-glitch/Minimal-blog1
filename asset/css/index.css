@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.external-header {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.header-section {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 20px 0;
+}
+header li {
+  cursor: pointer;
+}
+header li:hover {
+  color: #ea9c28;
+}
+header button {
+  cursor: pointer;
+}
+header button:hover {
+  background-color: brown;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #0000ff;
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+header button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+.hii {
+  text-align: center;
+  border-radius: 100px;
+  background-color: rgba(162, 185, 190, 0.5);
+  width: fit-content;
+  padding: 7px 15px;
+  margin: 80px auto;
+}
+
+.hero {
+  margin-bottom: 70px;
+}
+
+.hero h1 {
+  font-size: 76px;
+  color: brown;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.dope {
+  text-align: center;
+}
+
+.second-sect {
+  background-color: rgb(231, 225, 225);
+}
+.everything-container {
+  width: 70%;
+  margin: auto;
+  padding: 50px 0;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.section-header button {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 20px auto;
+
+}
+.blog div{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.done  {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  padding: 40px 60px;
+}
+.done h3 {
+  color: #e00b0b;
+  font-size: 30px;
+  padding: 10px;
+}
+.done form {
+  padding: 30px;
+  margin-top: 40px;
+}
+.sooo input {
+  padding: 8px;
+  border-radius: 5px;
+  border-style: 2px solid black;
+  padding-right: 100px;
+}
+.sooo button {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.sooo button:hover {
+  background-color: brown;
+}
+.second-sect {
+  border-bottom: 1px solid rgb(109, 107, 107);
+}
+.spidey {
+  text-align: center;
+  margin-top: 20px;
+}
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+  .blog {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .section-header {
+    /* flex-direction: column-; */
+    text-align: center;
+    gap: 10px;
+  }
+
+  footer form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog img {
+    width: 100%;
+  }
+}
+
+.external-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 20px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header-section img {
+  height: 35px;
+}
+
+/* NAVIGATION */
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+}
+
+header nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+header nav ul li button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#menu-toggle {
+  display: none; 
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    width: 200px;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #menu-toggle:checked ~ header nav {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
