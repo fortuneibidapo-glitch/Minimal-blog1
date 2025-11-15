@@ -1,0 +1,60 @@
+.body {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+body {
+    background-color: rgb(206, 201, 201);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+div.container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px 20px;
+}
+.header button {
+    padding: 15px;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+}
+.hi {
+    background-color: blue;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+}
+.hi1 {
+    padding: 7px;
+    border-radius: 7px;
+}
+ul li:first-child {
+    text-decoration: line-through;
+
+}
+ul li:nth-child(2){
+    text-decoration: line-through;
+}
+.list li {
+    padding: 10px 0;
+    list-style: none;
+    align-items: left;
+    border-bottom: 1px solid gray;
+}
+p.finish {
+    text-align: center;
+    padding-top: 10px; 
+}
+i.fa-trash {
+    float: right;
+}
